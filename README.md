@@ -7,6 +7,10 @@ A browser-based 3D sandtray for remote sandplay sessions between a therapist and
 > **這不是醫療器材。** 本軟體不提供診斷或治療建議，也不取代受過訓練的專業人員。正式用於臨床前，請自行評估所在地的法規、資料保護與機構規範。
 > This software is not a medical device. See [NOTICE.md](NOTICE.md).
 
+![左邊乾沙盤擺著城堡、風車、教堂、酒館和人物，右邊濕沙盤擺著岩山、樹林、石像和角色](docs/screenshot-sandtray.webp)
+
+<sub>本機模式畫面，26 件物件全部來自 CC0 素材包（Kay Lousberg KayKit、Quaternius）。</sub>
+
 ## 有什麼
 
 - 兩個沙盤（乾沙、可加水），沙可以挖可以堆，存成高度圖
