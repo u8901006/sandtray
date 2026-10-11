@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "sceneId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "sceneRevision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "objects": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "assetId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "assetVersion": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "transform": {
+            "type": "object",
+            "properties": {
+              "position": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "number",
+                    "minimum": -8.34,
+                    "maximum": 8.34
+                  },
+                  {
+                    "type": "number",
+                    "minimum": -1.5,
+                    "maximum": 5
+                  },
+                  {
+                    "type": "number",
+                    "minimum": -8.34,
+                    "maximum": 8.34
+                  }
+                ],
+                "items": false,
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "rotation": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "number",
+                    "minimum": -1,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "minimum": -1,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "minimum": -1,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "minimum": -1,
+                    "maximum": 1
+                  }
+                ],
+                "items": false,
+                "minItems": 4,
+                "maxItems": 4,
+                "description": "Unit quaternion x,y,z,w; runtime tolerance 0.0001"
+              },
+              "scale": {
+                "type": "number",
+                "minimum": 0.1,
+                "maximum": 5
+              }
+            },
+            "required": [
+              "position",
+              "rotation",
+              "scale"
+            ],
+            "additionalProperties": false
+          },
+          "materialOverrides": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80,
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            }
+          },
+          "colorVariant": {
+            "type": "string",
+            "enum": [
+              "t1",
+              "t2",
+              "t3",
+              "t4",
+              "t5",
+              "t6",
+              "orig"
+            ]
+          },
+          "hidden": {
+            "type": "boolean"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "animation": {
+            "type": "object",
+            "properties": {
+              "clipId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "pattern": "^[A-Za-z0-9_-]+$"
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "playing",
+                  "paused",
+                  "stopped"
+                ]
+              },
+              "serverStartedAt": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "offsetMs": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "speed": {
+                "type": "number",
+                "minimum": 0.25,
+                "maximum": 2
+              },
+              "loop": {
+                "type": "boolean"
+              },
+              "initiatedBy": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "pattern": "^[A-Za-z0-9_-]+$"
+              },
+              "path": {
+                "type": "object",
+                "properties": {
+                  "points": {
+                    "minItems": 2,
+                    "maxItems": 64,
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "prefixItems": [
+                        {
+                          "type": "number",
+                          "minimum": -8.34,
+                          "maximum": 8.34
+                        },
+                        {
+                          "type": "number",
+                          "minimum": -1.5,
+                          "maximum": 5
+                        },
+                        {
+                          "type": "number",
+                          "minimum": -8.34,
+                          "maximum": 8.34
+                        }
+                      ],
+                      "items": false,
+                      "minItems": 3,
+                      "maxItems": 3
+                    }
+                  },
+                  "durationMs": {
+                    "type": "integer",
+                    "minimum": 100,
+                    "maximum": 600000
+                  }
+                },
+                "required": [
+                  "points",
+                  "durationMs"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "clipId",
+              "state",
+              "serverStartedAt",
+              "offsetMs",
+              "speed",
+              "loop",
+              "initiatedBy"
+            ],
+            "additionalProperties": false
+          },
+          "trayId": {
+            "type": "string",
+            "enum": [
+              "dry",
+              "wet"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "assetId",
+          "assetVersion",
+          "transform",
+          "materialOverrides",
+          "hidden",
+          "revision"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "environment": {
+      "type": "object",
+      "properties": {
+        "sandColor": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        }
+      },
+      "required": [
+        "sandColor",
+        "backgroundColor"
+      ],
+      "additionalProperties": false
+    },
+    "updatedAt": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "sceneId",
+    "sceneRevision",
+    "objects",
+    "environment",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}

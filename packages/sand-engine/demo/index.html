@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>sand-engine POC demo（G33／T12）</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; overflow: hidden; font-family: system-ui, sans-serif; }
+    #app { position: absolute; inset: 0; }
+    #app canvas { display: block; touch-action: none; }
+    #toolbar {
+      position: absolute; top: 8px; left: 8px; z-index: 10;
+      display: flex; flex-direction: column; gap: 4px;
+      background: rgba(16, 20, 24, 0.82); padding: 8px; border-radius: 8px;
+      font-size: 13px; color: #dfe6ee; max-width: 210px;
+    }
+    #toolbar .row { display: flex; gap: 4px; flex-wrap: wrap; }
+    #toolbar .label { opacity: 0.65; font-size: 11px; margin: 2px 0; }
+    #toolbar button {
+      flex: 1; padding: 5px 8px; font-size: 12px; cursor: pointer;
+      background: #2a3340; color: #dfe6ee; border: 1px solid #46536a; border-radius: 5px;
+    }
+    #toolbar button.active { background: #3f6ea8; border-color: #6fa3dd; }
+    #hud {
+      position: absolute; top: 8px; right: 8px; z-index: 10;
+      background: rgba(16, 20, 24, 0.82); padding: 8px 10px; border-radius: 8px;
+      font: 12px/1.6 ui-monospace, Consolas, monospace; color: #cfe3f5; white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toolbar">
+    <div class="label">工具</div>
+    <div class="row" id="tools">
+      <button data-tool="dig" class="active">挖掘</button>
+      <button data-tool="mound">堆沙</button>
+      <button data-tool="smooth">抹平</button>
+      <button data-tool="box">放方塊</button>
+    </div>
+    <div class="label">形狀</div>
+    <div class="row" id="shapes">
+      <button data-shape="rect" class="active">矩形</button>
+      <button data-shape="square">正方</button>
+      <button data-shape="circle">圓形</button>
+      <button data-shape="octagon">八邊</button>
+    </div>
+    <div class="label">尺寸</div>
+    <div class="row" id="sizes">
+      <button data-size="standard" class="active">標準 72×57</button>
+      <button data-size="max">120 cm</button>
+    </div>
+    <div class="label">場景</div>
+    <div class="row">
+      <button id="btn-close">關閉場景</button>
+      <button id="btn-open">重建場景</button>
+    </div>
+  </div>
+  <div id="hud">boot…</div>
+  <script type="module" src="/main.ts"></script>
+</body>
+</html>

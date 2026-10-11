@@ -1,0 +1,2 @@
+# Paths listed here are not uploaded with the deployed static assets (wrangler .assetsignore syntax).
+# Add any pack whose licence has not been reviewed yet, e.g. imported-assets/<pack>/

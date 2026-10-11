@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "assetId": {
+      "type": "string",
+      "pattern": "^ST-(00[1-9]|0[1-9][0-9]|100)$"
+    },
+    "assetVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "status": {
+      "type": "string",
+      "const": "RELEASED"
+    },
+    "nameZhTW": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "tags": {
+      "maxItems": 20,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "animationClass": {
+      "type": "string",
+      "enum": [
+        "H",
+        "M",
+        "S"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "promptVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "imageHashes": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "canonicalImageHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "imageInterface": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "imageModel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "reconstructionProvider": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "reconstructionVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "termsReviewId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[A-Za-z0-9_-]+$"
+        }
+      },
+      "required": [
+        "promptVersion",
+        "imageHashes",
+        "canonicalImageHash",
+        "imageInterface",
+        "imageModel",
+        "generatedAt",
+        "reconstructionProvider",
+        "reconstructionVersion",
+        "termsReviewId"
+      ],
+      "additionalProperties": false
+    },
+    "outputs": {
+      "type": "object",
+      "properties": {
+        "glbKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "pattern": "^(published|source|working)\\/[A-Za-z0-9_./-]+$"
+        },
+        "glbSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "lodKeys": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300,
+            "pattern": "^(published|source|working)\\/[A-Za-z0-9_./-]+$"
+          }
+        },
+        "thumbnailKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "pattern": "^(published|source|working)\\/[A-Za-z0-9_./-]+$"
+        },
+        "sourceBlendKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "pattern": "^(published|source|working)\\/[A-Za-z0-9_./-]+$"
+        }
+      },
+      "required": [
+        "glbKey",
+        "glbSha256",
+        "lodKeys",
+        "thumbnailKey",
+        "sourceBlendKey"
+      ],
+      "additionalProperties": false
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "triangles": {
+          "type": "integer",
+          "minimum": 4,
+          "maximum": 30000
+        },
+        "drawCalls": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "transferBytes": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 5000000
+        },
+        "textureBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "triangles",
+        "drawCalls",
+        "transferBytes",
+        "textureBytes"
+      ],
+      "additionalProperties": false
+    },
+    "defaultScale": {
+      "type": "number",
+      "minimum": 0.1,
+      "maximum": 5
+    },
+    "bounds": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      ],
+      "items": false,
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "editableMaterials": {
+      "maxItems": 3,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "pattern": "^[A-Za-z0-9_-]+$"
+      }
+    },
+    "clips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "durationMs": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 600000
+          },
+          "loop": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "durationMs",
+          "loop"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "license": {
+      "type": "object",
+      "properties": {
+        "licenseSource": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "licenseText": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "attribution": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "webDistributionAllowed": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "licenseSource",
+        "licenseText",
+        "attribution",
+        "webDistributionAllowed"
+      ],
+      "additionalProperties": false
+    },
+    "qa": {
+      "type": "object",
+      "properties": {
+        "checks": {
+          "minItems": 8,
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "AS01",
+              "AS02",
+              "AS03",
+              "AS04",
+              "AS05",
+              "AS06",
+              "AS07",
+              "AS08"
+            ]
+          }
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "reportKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "pattern": "^(published|source|working)\\/[A-Za-z0-9_./-]+$"
+        }
+      },
+      "required": [
+        "checks",
+        "reviewer",
+        "reviewedAt",
+        "reportKey"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "assetId",
+    "assetVersion",
+    "status",
+    "nameZhTW",
+    "category",
+    "tags",
+    "animationClass",
+    "source",
+    "outputs",
+    "metrics",
+    "defaultScale",
+    "bounds",
+    "editableMaterials",
+    "clips",
+    "license",
+    "qa"
+  ],
+  "additionalProperties": false
+}

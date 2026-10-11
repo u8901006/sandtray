@@ -1,0 +1,43 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+test-results/
+playwright-report/
+.npm-cache/
+.tmp/
+
+# --- baseline 2026-09-14 (Claude Opus 5, user-authorized): exclude raw asset packs and heavy binaries
+Free3Dassets/
+Ultimate Animated Character Pack - Nov 2019/
+kenney_*/
+test-results-*/
+apps/web/dist/
+apps/web/public/environments/
+apps/web/public/imported-assets/
+*.blend
+*.blend1
+# V8-C (Claude Opus 5 2026-09-26): wrangler dry-run bundles land in apps/worker/working (11 MB of index.js/.map); build output, never committed
+apps/worker/working/
+working/**/*.glb
+working/**/*.png
+working/**/*.jpg
+working/**/*.wav
+references/**/*.glb
+__pycache__/
+*.pyc
+
+# --- G40 (GLM 2026-09-18, T13 Phase 1b-0): source/ 原始壓縮檔不進 git；
+#     但 source/**/license/ 授權快照與 source/**/metadata.json 要進（授權可追溯）
+source/**
+!source/**/
+!source/**/license/
+!source/**/license/**
+!source/**/metadata.json
+
+# --- T18-C (Claude Opus 5 2026-09-20): private-only models (restricted licences) live outside apps/web/public and are uploaded to R2 by tools/assets/upload-private-models.mjs
+private-assets/**/*.glb
+asset-packs/

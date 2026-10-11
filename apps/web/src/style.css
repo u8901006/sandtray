@@ -1,0 +1,99 @@
+:root{font-family:"Microsoft JhengHei","PingFang TC",sans-serif;color:#343e37;background:#f6f3ec;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;border:1px solid transparent;background:transparent;color:inherit}button:focus-visible,input:focus-visible{outline:3px solid #789b86;outline-offset:3px}button:hover{background:#e8e9df}h1,h2,h3,p{margin:0}h1{font-size:23px;font-weight:600;letter-spacing:3px}h2{font-size:20px;font-weight:500;line-height:1.7}h3{font-size:13px;font-weight:500;margin-bottom:10px}header{height:100px;display:flex;align-items:center;justify-content:space-between;padding:0 36px;border-bottom:1px solid #dfdfd3}.brand{display:flex;gap:15px;align-items:center}.brand-mark{font-size:43px;color:#587361}.brand p{font-size:11px;color:#888c80;margin-top:5px;letter-spacing:1px}.session{display:flex;align-items:center;gap:9px;font-size:12px;color:#687263}.dot{width:7px;height:7px;border-radius:50%;background:#73896c}.divider{width:1px;height:14px;background:#d2d5c8;margin:0 9px}.workspace{display:grid;grid-template-columns:var(--lib-w,235px) minmax(350px,1fr) var(--insp-w,255px);min-height:calc(100vh - 145px)}aside{padding:30px 22px}.library{border-right:1px solid #dfdfd3;display:flex;flex-direction:column}.section-kicker{font-size:10px;letter-spacing:2px;color:#858b7c;margin-bottom:8px}.muted{font-size:12px;color:#85897d;line-height:1.9;margin-top:9px}.search{display:flex;align-items:center;margin:25px 0 15px;background:#eeeee5;border-radius:7px;padding:0 10px;gap:8px}.search span{font-size:24px}.search input{width:100%;border:0;background:transparent;padding:12px 0;font-size:12px;min-width:0}.categories{display:flex;gap:4px;margin-bottom:19px}.categories button{padding:7px 15px;border-radius:16px;font-size:11px}.categories .active{background:#5f7764;color:white}.asset-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.asset-card{display:flex;flex-direction:column;align-items:center;border:1px solid #e1e2d5;border-radius:9px;padding:8px 5px 12px;background:#faf9f4;font-size:12px}.asset-card.chosen{border-color:#648167;background:#ebefe5}.asset-card small{font-size:9px;color:#93998a;margin-top:4px}.asset-illustration{font-family:Georgia,serif;font-size:53px;height:75px;display:flex;align-items:center;filter:drop-shadow(3px 6px 2px #0001)}.library-note{margin-top:auto;padding-top:40px;font-size:11px;color:#687760;line-height:1.9}.library-note p{margin-top:8px;color:#969a8c}.dev-note{font-size:9px;line-height:1.8;color:#959a8b;margin-top:24px}main{padding:28px 25px 0;min-width:0;display:flex;flex-direction:column}.canvas-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:21px}.canvas-heading h2{font-size:21px}.count{font-size:11px;color:#86907e;background:#e9eddf;border-radius:12px;padding:7px 11px}.viewport{position:relative;flex:1;min-height:410px;border:1px solid #dddfd0;border-radius:14px;overflow:hidden;background:#e9e5db}.viewport canvas{touch-action:none}.placing canvas{cursor:crosshair}.camera-tools{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;background:#fbfaf2e8;border:1px solid #d6dac9;border-radius:7px;padding:4px;white-space:nowrap}.camera-tools button{padding:9px 14px;font-size:11px;border-radius:4px}.empty-hint{position:absolute;top:18%;width:100%;pointer-events:none;text-align:center;color:#7e8974;letter-spacing:1px}.empty-hint span{display:block;font-size:14px}.empty-hint small{display:block;font-size:10px;margin-top:10px;color:#909783}.placement{position:absolute;top:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;border-radius:8px;padding:8px 12px;background:#faf9f0f5;white-space:nowrap;font-size:11px}.placement button{padding:8px;background:#e6eadc;border-radius:4px}.canvas-footer{min-height:64px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:10px;color:#818b77}.canvas-footer small{font-size:9px;color:#9a9f91}.inspector{border-left:1px solid #dfdfd3;display:flex;flex-direction:column}.inspector h2{font-size:18px}.load-status{font-size:10px;color:#7c8a71;margin-top:10px}.mode{display:flex;background:#e9ebdf;border-radius:7px;padding:4px;gap:4px;margin-top:24px}.mode button{flex:1;border-radius:5px;padding:10px;font-size:11px}.mode button[aria-pressed=true]{background:#fcfbf4;box-shadow:0 1px 3px #0001}.field-label{font-size:12px;margin:24px 0 13px}.coordinates{display:flex;gap:7px}.coordinates label{flex:1;min-width:0;font-size:10px;color:#85917d}.coordinates input{width:100%;border:1px solid #d9decd;border-radius:5px;background:#faf9f2;padding:9px 4px;margin-top:7px;color:#4e644a;font-size:12px}.slider{font-size:12px;display:block;margin-top:24px}.slider output{float:right;font-size:11px;color:#718367}.slider input{width:100%;accent-color:#6c8566;margin:16px 0 0}.small{font-size:10px}.remove{border:1px solid #d8dccc;border-radius:6px;margin-top:22px;font-size:11px;padding:10px;color:#7b796b}.privacy-note{margin-top:auto;padding-top:40px;font-size:11px;color:#717e64}.privacy-note p{font-size:10px;line-height:1.9;margin-top:7px;color:#949b87}details{font-size:10px;color:#88917e;margin-top:20px}details output{display:block;overflow-wrap:anywhere;line-height:1.7;margin-top:10px}.scene-list{margin-top:25px}.scene-list button{font-size:11px;padding:8px;display:block;width:100%;text-align:left;border-radius:5px}.scene-list button[aria-pressed=true]{background:#e8ecdf}footer{height:45px;border-top:1px solid #dfdfd3;display:flex;align-items:center;justify-content:space-between;padding:0 35px;font-size:10px;color:#8d9581}footer span{font-size:9px}.canvas-message{position:absolute;inset:20%;background:#faf9ed;padding:30px;font-size:14px;line-height:2}
+@media(max-width:1100px){.workspace{--lib-w:190px;--insp-w:210px;grid-template-columns:var(--lib-w) minmax(300px,1fr) var(--insp-w)}aside{padding:22px 16px}main{padding:22px 15px 0}.canvas-footer{flex-direction:column;justify-content:center;align-items:flex-start;gap:6px}.categories button{padding:7px 10px}header{height:80px;padding:0 22px}.workspace{min-height:calc(100vh - 125px)}}
+@media(max-width:760px){.workspace{grid-template-columns:1fr}.library{order:2;border-top:1px solid #dfdfd3}.asset-grid{grid-template-columns:repeat(3,1fr)}main{min-height:65vh;order:1}.inspector{order:3;border-top:1px solid #dfdfd3}.library-note,.dev-note{margin-top:15px;padding-top:0}.session{font-size:10px}.session .divider{margin:0}.brand p{display:none}.brand-mark{font-size:30px}h1{font-size:18px}.privacy-note{padding-top:24px}.viewport{min-height:360px}.placement{max-width:95%;white-space:normal}.canvas-footer{padding:10px 0}}
+fieldset{border:0;padding:0;margin:0}button:disabled,input:disabled{opacity:.45;cursor:not-allowed}.session-tools{padding:12px 28px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;border-bottom:1px solid #dfdfd3;font-size:12px}.session-tools button{padding:8px 12px;background:#e6ebdf;border-radius:6px}.session-tools input{max-width:330px;padding:6px;border:1px solid #bbb}.permission-request{padding:12px;background:#fff6d9;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.version-tools{flex-basis:100%;display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px;border:1px solid #d8dfd0;border-radius:8px;background:#faf9f3}.version-tools>p,.version-tools>ul{flex-basis:100%;line-height:1.8}.version-tools ul{list-style:none;padding:0;margin:0}.version-tools li{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 0}.version-tools [role=alertdialog]{flex-basis:100%;padding:14px;border:2px solid #8e9c80;border-radius:8px;background:#fff7df}.version-tools [role=alertdialog] p{margin-bottom:12px}.session-tools select{font:inherit;padding:7px;border:1px solid #bbb;border-radius:5px;background:#faf9f3}
+
+.asset-illustration img{width:100%;height:100%;object-fit:contain}.asset-card{min-width:0;overflow-wrap:anywhere}.asset-card span:not(.asset-illustration){font-size:12px}.categories{flex-wrap:wrap}.inspector select{max-width:100%}
+
+.library .asset-grid{max-height:360px;overflow-y:auto;align-content:start;flex-shrink:0;padding:2px}
+
+@media(max-width:760px){.workspace>main{height:540px;min-height:0}}
+
+.scene-list{max-height:320px;overflow-y:auto;flex-shrink:0;scrollbar-gutter:stable;padding-right:4px}
+.scene-list h3{position:sticky;top:0;background:#f6f3ec;padding:4px 0;z-index:1}
+.credits{margin-top:20px;font-size:11px;color:#6f7868}.credits summary{cursor:pointer;font-weight:500}.credits-group{margin-top:10px}.credits-group h3{margin:6px 0 4px;font-size:11px;color:#5f7764}.credits-group details{margin:4px 0 0 8px}.credits ul{margin:4px 0 0;padding-left:16px;line-height:1.7}.credits button{margin-top:10px;border:1px solid #d8dccc;border-radius:6px;padding:7px 10px;font-size:11px}.credits [role=status]{margin-left:8px}.credits textarea{width:100%;margin-top:8px;font-size:10px}.provenance{font-size:10px;color:#7c8a71;margin-top:8px;line-height:1.7}
+.sand-tools{position:absolute;top:14px;left:14px;display:flex;flex-wrap:wrap;align-items:center;gap:4px;max-width:calc(100% - 28px);background:#fbfaf2e8;border:1px solid #d6dac9;border-radius:7px;padding:4px;font-size:11px}.sand-tools button{padding:8px 12px;border-radius:4px;font-size:11px}.sand-tools button[aria-pressed=true]{background:#1f5f8b;color:#fff}.sand-tools button:disabled{opacity:.45;cursor:not-allowed}.sand-tools .water{display:flex;align-items:center;gap:6px;padding:0 8px;color:#4c6070}.sand-tools .water input{width:110px;accent-color:#1f5f8b}.sand-tools small{flex-basis:100%;padding:2px 8px;color:#7b806f;font-size:10px}.placing .sand-tools{display:none}
+
+/* 2026-10-03 上線整合：桌面版沙盤欄不再被物件庫高度撐長（素材分類增加後沙盤被推出首屏）；維持一屏最小高度。畫布改 absolute 填滿 .viewport（main.tsx），不依賴百分比高度。 */
+@media(min-width:761px){.workspace>main{align-self:start;min-height:calc(100vh - 145px)}}
+@media(min-width:761px) and (max-width:1100px){.workspace>main{min-height:calc(100vh - 125px)}}
+
+/* 2026-10-09 UX 建議 1–9（Claude Opus 5.5） */
+/* 1 沙盤要大：兩側欄可收起成一條窄邊；桌面版側欄自己捲動，不再把整頁撐長。 */
+.workspace.library-closed{--lib-w:52px}.workspace.inspector-closed{--insp-w:52px}
+.panel-toggle{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:32px;height:32px;border:1px solid #d6dac9;border-radius:50%;background:#fbfaf2;font-size:18px;line-height:1;color:#587361;margin-bottom:12px}
+.library .panel-toggle{align-self:flex-end}.inspector .panel-toggle{align-self:flex-start}
+aside.collapsed{padding:22px 9px;align-items:center}
+@media(min-width:761px){.library,.inspector{position:sticky;top:0;align-self:start;max-height:100vh;overflow-y:auto;scrollbar-gutter:stable}}
+.library .asset-grid{max-height:none}
+.canvas-heading{margin-bottom:12px}
+/* 2 物件架：先選大類，再選細分類；縮圖放大。 */
+.shelf-groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:4px 2px;margin-bottom:10px}
+.shelf-group{display:flex;flex-direction:column;align-items:center;gap:3px;padding:5px 0;border-radius:10px;font-size:10px;color:#5d6858;min-width:0}
+.shelf-group .glyph{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:16px;background:#e9ecdf;color:#4f6552}
+.shelf-group.active{color:#3d5140;font-weight:600}.shelf-group.active .glyph{background:#5f7764;color:#fff}
+.categories{padding:6px;border-radius:9px;background:#efefe6;margin-bottom:14px}
+.asset-card{user-select:none;-webkit-user-select:none}.asset-illustration{height:88px}
+/* 3 拖放：跟著游標的縮圖。 */
+.drag-ghost{position:fixed;z-index:50;width:64px;height:64px;transform:translate(-50%,-80%);pointer-events:none;opacity:.85;filter:drop-shadow(0 6px 6px #0003);font-size:44px;display:grid;place-items:center}
+.drag-ghost img{width:100%;height:100%;object-fit:contain}
+/* 4 物件旁的快速工具；7 治療師持有標籤。 */
+.quick-tools{display:flex;gap:3px;padding:4px;background:#fffdf8f2;border:1px solid #d6dac9;border-radius:24px;box-shadow:0 4px 14px #0002;transform:translate(-50%,26px);white-space:nowrap}
+.quick-tools button{width:36px;height:36px;border-radius:50%;font-size:18px;line-height:1;display:grid;place-items:center;color:#46584a}
+.quick-tools button:hover{background:#eef0e6}.quick-tools .danger{color:#b65a4a}
+@media(pointer:coarse){.quick-tools button{width:44px;height:44px}}
+.holder-badge{display:inline-block;transform:translate(-50%,80px);padding:3px 9px;border-radius:12px;color:#fff;font-size:11px;white-space:nowrap}
+.role-legend{display:inline-flex;align-items:center;gap:4px;margin-left:16px}.role-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-left:8px}
+/* 5、6 工具與視角：圖示＋文字。 */
+.sand-tools button{display:inline-flex;align-items:center;gap:6px;padding:6px 11px}.sand-tools svg{width:20px;height:20px;flex-shrink:0}
+.camera-tools button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 10px}.camera-tools svg{width:22px;height:22px}
+.camera-tools button[aria-pressed=true]{background:#e6ebdf;color:#3d5140}
+/* 8 案主畫面：字大一號、少一點說明文字。 */
+.client-mode .asset-card span:not(.asset-illustration){font-size:14px}
+.client-mode .sand-tools button,.client-mode .camera-tools button,.client-mode .shelf-group,.client-mode .categories button{font-size:13px}
+.client-mode .muted,.client-mode .canvas-footer{font-size:13px}
+.client-mode .library-note{display:none}
+/* 2026-10-10 使用者指示：上方面板（頁首、會談工具、庭園設定、標題）可收起，沙盤佔滿其餘畫面。 */
+.chrome-toggle{margin-left:14px;padding:6px 10px;border:1px solid #cfd2c4;border-radius:6px;background:#f5f4ec;font-size:12px;color:#425447;cursor:pointer}
+.chrome-bar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:40px;padding:4px 16px;border-bottom:1px solid #dfdfd3;background:#f6f3eb;font-size:12px}
+.chrome-bar .brand-mark{font-size:18px;line-height:1}
+.chrome-bar strong{font-family:Georgia,serif;font-weight:400;font-size:14px}
+.chrome-bar .chrome-toggle{margin-left:auto}
+.chrome-alert{padding:5px 10px;border-radius:999px;border:0;background:#c9673d;color:#fff;font-size:12px;cursor:pointer}
+.app.chrome-collapsed .workspace{min-height:calc(100vh - 40px)}
+.app.chrome-collapsed .workspace>main{padding-top:8px;min-height:calc(100vh - 40px)}
+.app.chrome-collapsed .workspace>main .viewport,.app.chrome-collapsed .workspace.garden-focused .viewport{flex:none;height:calc(100vh - 92px);min-height:360px}
+@media(max-width:760px){.app.chrome-collapsed .workspace>main{height:auto}.app.chrome-collapsed .workspace>main .viewport{height:calc(100svh - 110px)}}
+/* 2026-10-10 使用者指示：手機寬度視角按鈕列（6 顆）被沙盤右緣裁切；窄螢幕改為六等分、限制在沙盤寬度內，標籤可換行。 */
+@media(max-width:760px){.camera-tools{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:calc(100% - 16px);max-width:460px;bottom:10px;white-space:normal}
+.camera-tools button,.client-mode .camera-tools button{min-width:0;min-height:44px;padding:4px 2px;font-size:10px;line-height:1.2;justify-content:center}
+.camera-tools button span{overflow-wrap:anywhere;text-align:center}.camera-tools svg{width:18px;height:18px}}
+/* 2026-10-10 案主等候確認：蓋住沙盤，避免誤以為已入房 */
+.waiting-overlay{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;text-align:center;background:rgba(246,243,236,.9);color:#343e37}
+.waiting-overlay strong{font-size:20px;letter-spacing:1px}
+.waiting-overlay span{font-size:15px}
+.waiting-overlay small{font-size:13px;color:#6f7868}
+/* 2026-10-10 沙盤放大：拿掉標題列後縮小主欄留白；沙盤工具框可收成一顆按鈕 */
+main{padding:12px 10px 0}
+.sand-tools .tools-toggle{margin-left:auto;color:#5f6b58}
+.sand-tools.collapsed{padding:3px}
+.sand-tools.collapsed .tools-toggle{margin-left:0;color:inherit}
+@media(max-width:760px){main{padding:8px 6px 0}}
+/* 2026-10-11 使用者指示「沙盤最大化」1–3（Claude Opus 5.5）
+   1 最下方 footer 已從 main.tsx 拿掉；圖例在上方小條／頁首。
+   2 兩側面板都收起、上方面板也收起時，沙盤貼邊：主欄不留白、沙盤不畫框與圓角。
+   3 iPad Safari 的 100vh 含網址列，沙盤底部會被藏起；支援 dvh 的瀏覽器改量「實際看得到的高度」，不支援的維持原寫法。 */
+.chrome-bar .role-legend,.session .role-legend{margin-left:6px;font-size:11px;color:#687263}
+@media(min-width:761px){
+ .app.chrome-collapsed .workspace.library-closed.inspector-closed>main{padding:0}
+ .app.chrome-collapsed .workspace.library-closed.inspector-closed>main .viewport{border:0;border-radius:0;height:calc(100vh - 104px)}
+ .app.chrome-collapsed .workspace.library-closed.inspector-closed>main .canvas-footer{padding:0 12px}
+}
+@supports(height:100dvh){@media(min-width:761px){
+ .workspace>main{min-height:calc(100dvh - 145px)}.library,.inspector{max-height:100dvh}
+ .app.chrome-collapsed .workspace,.app.chrome-collapsed .workspace>main{min-height:calc(100dvh - 40px)}
+ .app.chrome-collapsed .workspace>main .viewport,.app.chrome-collapsed .workspace.garden-focused .viewport{height:calc(100dvh - 92px)}
+ .app.chrome-collapsed .workspace.library-closed.inspector-closed>main .viewport{height:calc(100dvh - 104px)}
+}}
+@supports(height:100dvh){@media(min-width:761px) and (max-width:1100px){.workspace>main{min-height:calc(100dvh - 125px)}}}

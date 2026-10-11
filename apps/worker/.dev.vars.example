@@ -1,0 +1,9 @@
+# Copy to apps/worker/.dev.vars (gitignored) only if you want to test OIDC sign-in locally.
+# The local prototype works without any of these. For deployed environments set each one with
+#   npx wrangler secret put <NAME> --env production --config apps/worker/wrangler.jsonc
+OIDC_ISSUER=https://accounts.example.com
+OIDC_CLIENT_ID=replace-me
+OIDC_CLIENT_SECRET=replace-me
+OIDC_AUTHORIZATION_URL=https://accounts.example.com/authorize
+OIDC_TOKEN_URL=https://accounts.example.com/token
+OIDC_JWKS_URL=https://accounts.example.com/.well-known/jwks.json

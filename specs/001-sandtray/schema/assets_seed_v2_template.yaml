@@ -1,0 +1,635 @@
+# assets_seed.yaml
+# Online Sandtray 3D Asset Registry
+schema_version: "2.0"
+
+project:
+  name: "online-sandtray"
+  target_platform:
+    - web
+    - threejs
+    - cloudflare
+  preferred_format: glb
+
+  asset_policy:
+    preferred_licenses:
+      - CC0
+      - CC-BY-4.0
+      - commercial_royalty_free
+
+    reject_licenses:
+      - CC-BY-NC
+      - CC-BY-ND
+      - editorial_only
+      - non_commercial_only
+
+    preferred_sources:
+      - Quaternius
+      - Kenney
+      - PolyHaven
+      - Sketchfab
+      - Fab
+      - CGTrader
+      - TurboSquid
+      - DAZ3D
+      - Moyu
+
+    default_performance_targets:
+      max_triangles_prop: 15000
+      max_triangles_character: 50000
+      preferred_texture_size: 1024
+      max_texture_size: 2048
+      preferred_material_count: 4
+      max_glb_mb: 8
+
+    optimization:
+      draco: true
+      meshopt: true
+      texture_format: webp
+      use_ktx2_when_possible: true
+      generate_lod: true
+
+
+# ============================================================
+# ASSET TEMPLATE
+# ============================================================
+
+asset_template:
+
+  identity:
+    id: ""
+    name_zh: ""
+    name_en: ""
+    aliases: []
+    category: ""
+    subcategory: ""
+    tags: []
+
+  sandtray:
+    phase: 1
+    priority: medium       # critical | high | medium | low
+    symbolic_roles: []
+    therapeutic_contexts: []
+    age_relevance:
+      - child
+      - adolescent
+      - adult
+
+    interaction:
+      movable: true
+      rotatable: true
+      scalable: true
+      color_variant: false
+      pose_variant: false
+      animation_required: false
+
+  source:
+    provider: ""
+    creator: ""
+    source_url: ""
+    asset_page_url: ""
+
+    tier:
+      type: free           # free | pro | source | paid
+      price_usd: 0
+      source_files_included: false
+
+    discovered_by: ""
+    discovery_date: ""
+
+  license:
+    name: ""
+    license_url: ""
+    commercial_use: null
+    modification_allowed: null
+    attribution_required: null
+    redistribution_allowed: null
+
+    browser_delivery_safe: null
+    standalone_file_risk: null
+
+    notes: ""
+    verified: false
+    verified_date: ""
+
+  files:
+    downloadable: false
+
+    formats:
+      glb: false
+      gltf: false
+      fbx: false
+      obj: false
+      blend: false
+      dae: false
+      usd: false
+
+    source_file_available: false
+    blend_available: false
+
+    downloaded: false
+    original_filename: ""
+    local_source_path: ""
+
+  geometry:
+    triangles: null
+    vertices: null
+    meshes: null
+
+    rigged: false
+    bones: null
+
+    lod_available: false
+    lod_levels: []
+
+  materials:
+    material_count: null
+    texture_count: null
+
+    texture_resolution_max: null
+
+    texture_types:
+      base_color: false
+      normal: false
+      roughness: false
+      metallic: false
+      ao: false
+      emissive: false
+
+    pbr: null
+    baked: null
+
+  animation:
+    animated: false
+    clips: []
+
+  visual:
+    style:
+      - stylized
+
+    preferred_style_match: null
+    realism_level: null
+
+    human_character:
+      enabled: false
+      apparent_age: null
+      gender_presentation: null
+      skin_tone_variants: []
+      clothing_variants: []
+
+  processing:
+    needs_blender: false
+
+    tasks:
+      remove_unwanted_objects: false
+      remove_weapons: false
+      simplify_geometry: false
+      decimate: false
+      merge_materials: false
+      texture_atlas: false
+      resize_textures: false
+      bake_textures: false
+      fix_normals: false
+      fix_origin: false
+      normalize_scale: false
+      generate_lod: false
+      convert_to_glb: false
+      compress_glb: false
+
+    status: pending       # pending | processing | complete | rejected
+    assigned_agent: null
+
+  output:
+    final_glb: ""
+    thumbnail: ""
+
+    threejs:
+      scale: 1.0
+      rotation:
+        x: 0
+        y: 0
+        z: 0
+
+      ground_offset: 0
+      cast_shadow: true
+      receive_shadow: true
+
+    performance:
+      final_triangles: null
+      final_texture_size: null
+      final_file_mb: null
+
+  qa:
+    license_pass: false
+    visual_pass: false
+    geometry_pass: false
+    performance_pass: false
+    threejs_pass: false
+    mobile_pass: false
+
+    reviewed_by: null
+    notes: ""
+
+  status:
+    procurement: todo
+    download: todo
+    optimization: todo
+    integration: todo
+    overall: todo
+
+
+# ============================================================
+# ASSETS
+# ============================================================
+
+assets:
+
+  # ----------------------------------------------------------
+  # PEOPLE
+  # ----------------------------------------------------------
+
+  - identity:
+      id: human_baby_001
+      name_zh: 嬰兒
+      name_en: Baby
+      aliases:
+        - infant
+      category: people
+      subcategory: family
+      tags:
+        - baby
+        - child
+        - family
+        - vulnerability
+
+    sandtray:
+      phase: 2
+      priority: critical
+
+      symbolic_roles:
+        - vulnerability
+        - dependency
+        - new_beginning
+        - inner_child
+
+      therapeutic_contexts:
+        - family
+        - attachment
+        - trauma
+        - grief
+        - inner_child
+
+      age_relevance:
+        - child
+        - adolescent
+        - adult
+
+      interaction:
+        movable: true
+        rotatable: true
+        scalable: true
+        color_variant: true
+        pose_variant: true
+        animation_required: false
+
+    source:
+      provider: null
+      creator: null
+      source_url: null
+      asset_page_url: null
+
+      tier:
+        type: source
+        price_usd: null
+        source_files_included: true
+
+      discovered_by: search_agent
+      discovery_date: null
+
+    license:
+      name: null
+      license_url: null
+      commercial_use: null
+      modification_allowed: null
+      attribution_required: null
+      redistribution_allowed: null
+      browser_delivery_safe: null
+      standalone_file_risk: null
+      notes: ""
+      verified: false
+      verified_date: null
+
+    files:
+      downloadable: false
+
+      formats:
+        glb: false
+        gltf: false
+        fbx: false
+        obj: false
+        blend: false
+        dae: false
+        usd: false
+
+      source_file_available: false
+      blend_available: false
+      downloaded: false
+      original_filename: ""
+      local_source_path: ""
+
+    geometry:
+      triangles: null
+      vertices: null
+      meshes: null
+      rigged: false
+      bones: null
+      lod_available: false
+      lod_levels: []
+
+    materials:
+      material_count: null
+      texture_count: null
+      texture_resolution_max: null
+
+      texture_types:
+        base_color: false
+        normal: false
+        roughness: false
+        metallic: false
+        ao: false
+        emissive: false
+
+      pbr: null
+      baked: null
+
+    animation:
+      animated: false
+      clips: []
+
+    visual:
+      style:
+        - stylized
+        - soft
+
+      preferred_style_match: true
+      realism_level: medium
+
+      human_character:
+        enabled: true
+        apparent_age: infant
+        gender_presentation: neutral
+        skin_tone_variants: []
+        clothing_variants: []
+
+    processing:
+      needs_blender: true
+
+      tasks:
+        remove_unwanted_objects: false
+        remove_weapons: false
+        simplify_geometry: true
+        decimate: true
+        merge_materials: true
+        texture_atlas: true
+        resize_textures: true
+        bake_textures: false
+        fix_normals: true
+        fix_origin: true
+        normalize_scale: true
+        generate_lod: true
+        convert_to_glb: true
+        compress_glb: true
+
+      status: pending
+      assigned_agent: null
+
+    output:
+      final_glb: "assets/models/people/baby.glb"
+      thumbnail: "assets/thumbs/people/baby.webp"
+
+      threejs:
+        scale: 1.0
+        rotation:
+          x: 0
+          y: 0
+          z: 0
+        ground_offset: 0
+        cast_shadow: true
+        receive_shadow: true
+
+      performance:
+        final_triangles: null
+        final_texture_size: null
+        final_file_mb: null
+
+    qa:
+      license_pass: false
+      visual_pass: false
+      geometry_pass: false
+      performance_pass: false
+      threejs_pass: false
+      mobile_pass: false
+      reviewed_by: null
+      notes: ""
+
+    status:
+      procurement: todo
+      download: todo
+      optimization: todo
+      integration: todo
+      overall: todo
+
+
+  # ----------------------------------------------------------
+  # MEDICAL
+  # ----------------------------------------------------------
+
+  - identity:
+      id: role_doctor_001
+      name_zh: 醫師
+      name_en: Doctor
+      aliases:
+        - physician
+        - medical doctor
+      category: people
+      subcategory: profession
+      tags:
+        - doctor
+        - hospital
+        - authority
+        - care
+
+    sandtray:
+      phase: 2
+      priority: high
+
+      symbolic_roles:
+        - caregiver
+        - authority
+        - healer
+        - illness
+
+      therapeutic_contexts:
+        - trauma
+        - medical_trauma
+        - illness
+        - caregiving
+
+      age_relevance:
+        - child
+        - adolescent
+        - adult
+
+      interaction:
+        movable: true
+        rotatable: true
+        scalable: true
+        color_variant: true
+        pose_variant: true
+        animation_required: false
+
+    source:
+      provider: null
+      creator: null
+      source_url: null
+      asset_page_url: null
+
+      tier:
+        type: source
+        price_usd: null
+        source_files_included: true
+
+      discovered_by: search_agent
+      discovery_date: null
+
+    license:
+      name: null
+      license_url: null
+      commercial_use: null
+      modification_allowed: null
+      attribution_required: null
+      redistribution_allowed: null
+      browser_delivery_safe: null
+      standalone_file_risk: null
+      notes: ""
+      verified: false
+      verified_date: null
+
+    files:
+      downloadable: false
+      formats:
+        glb: false
+        gltf: false
+        fbx: false
+        obj: false
+        blend: false
+        dae: false
+        usd: false
+
+      source_file_available: false
+      blend_available: false
+      downloaded: false
+      original_filename: ""
+      local_source_path: ""
+
+    geometry:
+      triangles: null
+      vertices: null
+      meshes: null
+      rigged: null
+      bones: null
+      lod_available: false
+      lod_levels: []
+
+    materials:
+      material_count: null
+      texture_count: null
+      texture_resolution_max: null
+
+      texture_types:
+        base_color: false
+        normal: false
+        roughness: false
+        metallic: false
+        ao: false
+        emissive: false
+
+      pbr: null
+      baked: null
+
+    animation:
+      animated: false
+      clips: []
+
+    visual:
+      style:
+        - stylized
+
+      preferred_style_match: null
+      realism_level: medium
+
+      human_character:
+        enabled: true
+        apparent_age: adult
+        gender_presentation: neutral
+        skin_tone_variants: []
+        clothing_variants:
+          - white_coat
+          - scrubs
+
+    processing:
+      needs_blender: true
+
+      tasks:
+        remove_unwanted_objects: false
+        remove_weapons: false
+        simplify_geometry: true
+        decimate: true
+        merge_materials: true
+        texture_atlas: true
+        resize_textures: true
+        bake_textures: false
+        fix_normals: true
+        fix_origin: true
+        normalize_scale: true
+        generate_lod: true
+        convert_to_glb: true
+        compress_glb: true
+
+      status: pending
+      assigned_agent: null
+
+    output:
+      final_glb: "assets/models/people/doctor.glb"
+      thumbnail: "assets/thumbs/people/doctor.webp"
+
+      threejs:
+        scale: 1.0
+        rotation:
+          x: 0
+          y: 0
+          z: 0
+        ground_offset: 0
+        cast_shadow: true
+        receive_shadow: true
+
+      performance:
+        final_triangles: null
+        final_texture_size: null
+        final_file_mb: null
+
+    qa:
+      license_pass: false
+      visual_pass: false
+      geometry_pass: false
+      performance_pass: false
+      threejs_pass: false
+      mobile_pass: false
+      reviewed_by: null
+      notes: ""
+
+    status:
+      procurement: todo
+      download: todo
+      optimization: todo
+      integration: todo
+      overall: todo

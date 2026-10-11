@@ -1,0 +1,902 @@
+[
+  {
+    "assetId": "ST-001",
+    "category": "人物",
+    "nameZhTW": "幼童短髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-002",
+    "category": "人物",
+    "nameZhTW": "幼童長髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-003",
+    "category": "人物",
+    "nameZhTW": "學齡兒童短髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-004",
+    "category": "人物",
+    "nameZhTW": "學齡兒童長髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-005",
+    "category": "人物",
+    "nameZhTW": "青少年短髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-006",
+    "category": "人物",
+    "nameZhTW": "青少年長髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-007",
+    "category": "人物",
+    "nameZhTW": "年輕成人短髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-008",
+    "category": "人物",
+    "nameZhTW": "年輕成人長髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-009",
+    "category": "人物",
+    "nameZhTW": "中年成人短髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-010",
+    "category": "人物",
+    "nameZhTW": "中年成人長髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-011",
+    "category": "人物",
+    "nameZhTW": "年長成人短髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-012",
+    "category": "人物",
+    "nameZhTW": "年長成人長髮",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-013",
+    "category": "人物",
+    "nameZhTW": "穿白袍人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-014",
+    "category": "人物",
+    "nameZhTW": "穿圍裙人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-015",
+    "category": "人物",
+    "nameZhTW": "穿工作服人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-016",
+    "category": "人物",
+    "nameZhTW": "穿運動服人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-017",
+    "category": "人物",
+    "nameZhTW": "背書包人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-018",
+    "category": "人物",
+    "nameZhTW": "穿雨衣人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-019",
+    "category": "人物",
+    "nameZhTW": "穿斗篷人物",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-020",
+    "category": "人物",
+    "nameZhTW": "中性簡約人偶",
+    "animationClass": "H",
+    "animationBrief": "idle／walk／wave",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-021",
+    "category": "動物",
+    "nameZhTW": "貓",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-022",
+    "category": "動物",
+    "nameZhTW": "狗",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-023",
+    "category": "動物",
+    "nameZhTW": "熊",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-024",
+    "category": "動物",
+    "nameZhTW": "兔",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-025",
+    "category": "動物",
+    "nameZhTW": "狐狸",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-026",
+    "category": "動物",
+    "nameZhTW": "狼",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-027",
+    "category": "動物",
+    "nameZhTW": "獅子",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-028",
+    "category": "動物",
+    "nameZhTW": "老虎",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-029",
+    "category": "動物",
+    "nameZhTW": "大象",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-030",
+    "category": "動物",
+    "nameZhTW": "馬",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-031",
+    "category": "動物",
+    "nameZhTW": "鹿",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-032",
+    "category": "動物",
+    "nameZhTW": "烏龜",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-033",
+    "category": "動物",
+    "nameZhTW": "蛇",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-034",
+    "category": "動物",
+    "nameZhTW": "貓頭鷹",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-035",
+    "category": "動物",
+    "nameZhTW": "小鳥",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-036",
+    "category": "動物",
+    "nameZhTW": "蝴蝶",
+    "animationClass": "M",
+    "animationBrief": "翅膀拍動",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-037",
+    "category": "動物",
+    "nameZhTW": "魚",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-038",
+    "category": "動物",
+    "nameZhTW": "鯨魚",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-039",
+    "category": "動物",
+    "nameZhTW": "海豚",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-040",
+    "category": "動物",
+    "nameZhTW": "章魚",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-041",
+    "category": "自然",
+    "nameZhTW": "闊葉樹",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-042",
+    "category": "自然",
+    "nameZhTW": "松樹",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-043",
+    "category": "自然",
+    "nameZhTW": "灌木",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-044",
+    "category": "自然",
+    "nameZhTW": "花叢",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-045",
+    "category": "自然",
+    "nameZhTW": "草叢",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-046",
+    "category": "自然",
+    "nameZhTW": "岩石",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-047",
+    "category": "自然",
+    "nameZhTW": "山",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-048",
+    "category": "自然",
+    "nameZhTW": "洞穴",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-049",
+    "category": "自然",
+    "nameZhTW": "河流片段",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-050",
+    "category": "自然",
+    "nameZhTW": "池塘",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-051",
+    "category": "自然",
+    "nameZhTW": "海浪",
+    "animationClass": "M",
+    "animationBrief": "海浪起伏",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-052",
+    "category": "自然",
+    "nameZhTW": "瀑布",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-053",
+    "category": "自然",
+    "nameZhTW": "太陽",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-054",
+    "category": "自然",
+    "nameZhTW": "月亮",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-055",
+    "category": "自然",
+    "nameZhTW": "雲朵",
+    "animationClass": "M",
+    "animationBrief": "雲朵緩移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-056",
+    "category": "建築",
+    "nameZhTW": "小屋",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-057",
+    "category": "建築",
+    "nameZhTW": "高樓",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-058",
+    "category": "建築",
+    "nameZhTW": "城堡",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-059",
+    "category": "建築",
+    "nameZhTW": "學校",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-060",
+    "category": "建築",
+    "nameZhTW": "診所",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-061",
+    "category": "建築",
+    "nameZhTW": "商店",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-062",
+    "category": "建築",
+    "nameZhTW": "帳篷",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-063",
+    "category": "建築",
+    "nameZhTW": "燈塔",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-064",
+    "category": "建築",
+    "nameZhTW": "橋",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-065",
+    "category": "建築",
+    "nameZhTW": "涼亭",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-066",
+    "category": "交通",
+    "nameZhTW": "汽車",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-067",
+    "category": "交通",
+    "nameZhTW": "公車",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-068",
+    "category": "交通",
+    "nameZhTW": "腳踏車",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-069",
+    "category": "交通",
+    "nameZhTW": "火車",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-070",
+    "category": "交通",
+    "nameZhTW": "船",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-071",
+    "category": "交通",
+    "nameZhTW": "飛機",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-072",
+    "category": "交通",
+    "nameZhTW": "直升機",
+    "animationClass": "M",
+    "animationBrief": "旋翼轉動",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-073",
+    "category": "交通",
+    "nameZhTW": "熱氣球",
+    "animationClass": "M",
+    "animationBrief": "吊籃輕擺",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-074",
+    "category": "界線與容器",
+    "nameZhTW": "木圍欄",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-075",
+    "category": "界線與容器",
+    "nameZhTW": "石牆",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-076",
+    "category": "界線與容器",
+    "nameZhTW": "大門",
+    "animationClass": "M",
+    "animationBrief": "門扇開關",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-077",
+    "category": "界線與容器",
+    "nameZhTW": "屏風",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-078",
+    "category": "界線與容器",
+    "nameZhTW": "圓形圍界",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-079",
+    "category": "界線與容器",
+    "nameZhTW": "寶箱",
+    "animationClass": "M",
+    "animationBrief": "箱蓋開關",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-080",
+    "category": "界線與容器",
+    "nameZhTW": "開口盒",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-081",
+    "category": "界線與容器",
+    "nameZhTW": "籃子",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-082",
+    "category": "界線與容器",
+    "nameZhTW": "玻璃瓶",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-083",
+    "category": "界線與容器",
+    "nameZhTW": "水桶",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-084",
+    "category": "生活物件",
+    "nameZhTW": "椅子",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-085",
+    "category": "生活物件",
+    "nameZhTW": "桌子",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-086",
+    "category": "生活物件",
+    "nameZhTW": "床",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-087",
+    "category": "生活物件",
+    "nameZhTW": "長椅",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-088",
+    "category": "生活物件",
+    "nameZhTW": "階梯",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-089",
+    "category": "生活物件",
+    "nameZhTW": "梯子",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-090",
+    "category": "生活物件",
+    "nameZhTW": "鑰匙",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-091",
+    "category": "生活物件",
+    "nameZhTW": "時鐘",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-092",
+    "category": "幻想與抽象",
+    "nameZhTW": "龍",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "PILOT-10",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-093",
+    "category": "幻想與抽象",
+    "nameZhTW": "獨角獸",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-094",
+    "category": "幻想與抽象",
+    "nameZhTW": "機器人",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-095",
+    "category": "幻想與抽象",
+    "nameZhTW": "巨人",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-096",
+    "category": "幻想與抽象",
+    "nameZhTW": "精靈",
+    "animationClass": "M",
+    "animationBrief": "精靈翅膀拍動",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-097",
+    "category": "幻想與抽象",
+    "nameZhTW": "愛心",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-098",
+    "category": "幻想與抽象",
+    "nameZhTW": "星星",
+    "animationClass": "M",
+    "animationBrief": "星星緩慢自轉",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-099",
+    "category": "幻想與抽象",
+    "nameZhTW": "盾牌",
+    "animationClass": "M",
+    "animationBrief": "盾牌舉起落下",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  },
+  {
+    "assetId": "ST-100",
+    "category": "幻想與抽象",
+    "nameZhTW": "鏡子",
+    "animationClass": "S",
+    "animationBrief": "無預製動畫；可路徑位移",
+    "batch": "BATCH",
+    "status": "PLANNED"
+  }
+]

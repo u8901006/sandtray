@@ -1,0 +1,12 @@
+{
+  "name": "@sandtray/sand-engine",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "REQ-016 §8 / T12（G33）：CPU 確定性 u8 高度場筆刷核心＋Three.js displacement 渲染 POC。零外部依賴（three 由 root workspace 提供）；不碰 Cloudflare、不碰既有共享核心。",
+  "scripts": {
+    "demo": "vite --config demo/vite.config.ts --host 127.0.0.1 --port 5179 --strictPort",
+    "test": "vitest run --config vitest.config.ts",
+    "test:e2e": "playwright test --config playwright.sand.config.ts"
+  }
+}

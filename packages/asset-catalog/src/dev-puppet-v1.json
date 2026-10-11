@@ -1,0 +1,15 @@
+[
+  {
+    "id": "DEV_PUPPET",
+    "name": "練習玩偶",
+    "category": "練習",
+    "symbol": "♟",
+    "color": "#8d7ae5",
+    "url": "/dev-assets/puppet-v1.glb",
+    "version": "puppet-v1",
+    "clips": [
+      { "id": "clip-0", "name": "待機", "durationMs": 1000 }
+    ],
+    "notes": "G57: DEV_ONLY two-version practice model restoring the version-scoped clip negative coverage (old trex pair removed in T18-D). v1 lacks the newer-only clip."
+  }
+]

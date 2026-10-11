@@ -1,0 +1,62 @@
+{
+  "type": 1,
+  "name": "Forest Ground 04",
+  "authors": {
+    "Rob Tuytel": "Photography, Processing",
+    "Rico Cilliers": "Minor adjustment"
+  },
+  "dimensions": [
+    3150.0000953674316,
+    3150.0000953674316
+  ],
+  "date_published": 1647907200,
+  "staging": null,
+  "tags": [
+    "rough",
+    "uneven",
+    "stones",
+    "ground",
+    "forest",
+    "dry",
+    "brown",
+    "gravel",
+    "rock",
+    "debris",
+    "nature",
+    "dirt"
+  ],
+  "categories": [
+    "outdoor",
+    "natural",
+    "terrain",
+    "rock",
+    "collection: pine_forest",
+    "collection: verdant_trail"
+  ],
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "sponsors": [
+    "77433244"
+  ],
+  "files_hash": "60e454ab149c058f8514ae29d4ce8b16f6f3bce5",
+  "description": "Free 8K texture of dry brown forest ground - rough, uneven dirt with scattered stones and gravel, high-detail rocky surface.",
+  "category_id": "2b016db1-a760-53aa-89ac-54c30f13214a",
+  "category": "Ground & Terrain/Forest Floor/Forest Soil",
+  "collections": [
+    "pine_forest",
+    "verdant_trail"
+  ],
+  "attributes": {
+    "surface_use": "ground",
+    "origin": "natural",
+    "setting": "outdoor",
+    "condition": [
+      "dirty"
+    ]
+  },
+  "img_version": "d96b3607",
+  "download_count": 165536,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/forest_ground_04.png?width=256&height=256&v=d96b3607"
+}

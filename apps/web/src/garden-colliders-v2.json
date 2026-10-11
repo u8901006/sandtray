@@ -1,0 +1,1679 @@
+{
+  "version": 2,
+  "bounds": 66,
+  "bodyRadius": 0.22,
+  "colliders": [
+    {
+      "kind": "box",
+      "name": "Pavilion_column",
+      "x": -7.5,
+      "z": 5.8,
+      "halfX": 0.115,
+      "halfZ": 0.115
+    },
+    {
+      "kind": "box",
+      "name": "Pavilion_column",
+      "x": -7.5,
+      "z": 0,
+      "halfX": 0.115,
+      "halfZ": 0.115
+    },
+    {
+      "kind": "box",
+      "name": "Pavilion_column",
+      "x": -7.5,
+      "z": -5.8,
+      "halfX": 0.115,
+      "halfZ": 0.115
+    },
+    {
+      "kind": "box",
+      "name": "Pavilion_column",
+      "x": 7.5,
+      "z": 5.8,
+      "halfX": 0.115,
+      "halfZ": 0.115
+    },
+    {
+      "kind": "box",
+      "name": "Pavilion_column",
+      "x": 7.5,
+      "z": 0,
+      "halfX": 0.115,
+      "halfZ": 0.115
+    },
+    {
+      "kind": "box",
+      "name": "Pavilion_column",
+      "x": 7.5,
+      "z": -5.8,
+      "halfX": 0.115,
+      "halfZ": 0.115
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": -12,
+      "z": 8,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": -35,
+      "z": 8,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": 11,
+      "z": -5,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": 16,
+      "z": -9,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": 25,
+      "z": -9,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": -10,
+      "z": -8,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Lantern_stone_base",
+      "x": 5,
+      "z": -12,
+      "halfX": 0.35,
+      "halfZ": 0.35
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_back_wall",
+      "x": 21,
+      "z": -20,
+      "halfX": 5.1,
+      "halfZ": 0.09
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_side_wall",
+      "x": 16,
+      "z": -17.2,
+      "halfX": 0.09,
+      "halfZ": 2.8
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_post",
+      "x": 16,
+      "z": -12,
+      "halfX": 0.125,
+      "halfZ": 0.125
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_post",
+      "x": 16,
+      "z": -16,
+      "halfX": 0.125,
+      "halfZ": 0.125
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_post",
+      "x": 16,
+      "z": -20,
+      "halfX": 0.125,
+      "halfZ": 0.125
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_side_wall",
+      "x": 26,
+      "z": -17.2,
+      "halfX": 0.09,
+      "halfZ": 2.8
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_post",
+      "x": 26,
+      "z": -12,
+      "halfX": 0.125,
+      "halfZ": 0.125
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_post",
+      "x": 26,
+      "z": -16,
+      "halfX": 0.125,
+      "halfZ": 0.125
+    },
+    {
+      "kind": "box",
+      "name": "Teahouse_post",
+      "x": 26,
+      "z": -20,
+      "halfX": 0.125,
+      "halfZ": 0.125
+    },
+    {
+      "kind": "box",
+      "name": "Shelf_board",
+      "x": 18,
+      "z": -19.5,
+      "halfX": 0.9,
+      "halfZ": 0.4
+    },
+    {
+      "kind": "box",
+      "name": "Shelf_board",
+      "x": 18,
+      "z": -19.5,
+      "halfX": 0.9,
+      "halfZ": 0.4
+    },
+    {
+      "kind": "box",
+      "name": "Shelf_board",
+      "x": 18,
+      "z": -19.5,
+      "halfX": 0.9,
+      "halfZ": 0.4
+    },
+    {
+      "kind": "box",
+      "name": "Shelf_board",
+      "x": 18,
+      "z": -19.5,
+      "halfX": 0.9,
+      "halfZ": 0.4
+    },
+    {
+      "kind": "box",
+      "name": "Shelf_board",
+      "x": 18,
+      "z": -19.5,
+      "halfX": 0.9,
+      "halfZ": 0.4
+    },
+    {
+      "kind": "box",
+      "name": "Sofa_frame",
+      "x": 19,
+      "z": -17,
+      "halfX": 1.4,
+      "halfZ": 0.625
+    },
+    {
+      "kind": "box",
+      "name": "Sofa_frame",
+      "x": 23,
+      "z": -17,
+      "halfX": 1.4,
+      "halfZ": 0.625
+    },
+    {
+      "kind": "box",
+      "name": "Low_tea_table",
+      "x": 21,
+      "z": -14.8,
+      "halfX": 1.55,
+      "halfZ": 0.625
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -59.03808,
+      "z": -16.24185,
+      "radiusX": 0.47258,
+      "radiusZ": 0.42288
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 5.70964,
+      "z": -53.69931,
+      "radiusX": 1.46695,
+      "radiusZ": 0.68595
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 4.29517,
+      "z": -18.68703,
+      "radiusX": 0.68706,
+      "radiusZ": 0.37929
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 1.53715,
+      "z": -54.4546,
+      "radiusX": 0.72566,
+      "radiusZ": 0.8048
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -19.94708,
+      "z": -2.09318,
+      "radiusX": 0.74182,
+      "radiusZ": 0.63747
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -6.92111,
+      "z": -57.17689,
+      "radiusX": 0.75616,
+      "radiusZ": 0.44715
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -48.33876,
+      "z": 9.13087,
+      "radiusX": 1.12905,
+      "radiusZ": 0.43546
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 18.39553,
+      "z": -57.17165,
+      "radiusX": 0.39276,
+      "radiusZ": 0.58743
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -5.84981,
+      "z": 31.95614,
+      "radiusX": 1.36707,
+      "radiusZ": 0.31759
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 51.59537,
+      "z": 9.48874,
+      "radiusX": 0.95214,
+      "radiusZ": 0.59371
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -13.17541,
+      "z": -17.13784,
+      "radiusX": 1.14616,
+      "radiusZ": 0.30997
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -29.35636,
+      "z": -45.04715,
+      "radiusX": 0.99259,
+      "radiusZ": 0.96674
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -11.81666,
+      "z": 40.20737,
+      "radiusX": 1.21663,
+      "radiusZ": 0.83903
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -5.76646,
+      "z": -18.1811,
+      "radiusX": 1.11931,
+      "radiusZ": 0.95559
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -5.62247,
+      "z": -15.2662,
+      "radiusX": 1.19203,
+      "radiusZ": 0.49446
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 31.74263,
+      "z": 2.50872,
+      "radiusX": 0.73667,
+      "radiusZ": 0.7022
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -18.29781,
+      "z": -40.78931,
+      "radiusX": 0.65195,
+      "radiusZ": 0.45785
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 39.22088,
+      "z": 5.16288,
+      "radiusX": 0.79581,
+      "radiusZ": 0.56112
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -4.53035,
+      "z": 23.08846,
+      "radiusX": 1.27991,
+      "radiusZ": 0.47056
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 11.42646,
+      "z": 14.37613,
+      "radiusX": 0.96653,
+      "radiusZ": 0.72958
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -51.7607,
+      "z": -25.303,
+      "radiusX": 0.79212,
+      "radiusZ": 0.68662
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -4.5512,
+      "z": 14.17803,
+      "radiusX": 1.59272,
+      "radiusZ": 0.76773
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 22.41726,
+      "z": -4.81318,
+      "radiusX": 0.95989,
+      "radiusZ": 0.42721
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -54.2825,
+      "z": -13.55431,
+      "radiusX": 1.19098,
+      "radiusZ": 0.844
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -23.08862,
+      "z": 32.05978,
+      "radiusX": 1.15407,
+      "radiusZ": 0.34446
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -45.2589,
+      "z": 33.97846,
+      "radiusX": 1.31328,
+      "radiusZ": 0.31272
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -50.63372,
+      "z": -2.48765,
+      "radiusX": 1.29423,
+      "radiusZ": 0.56113
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 26.71246,
+      "z": -35.49093,
+      "radiusX": 0.55422,
+      "radiusZ": 0.65246
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -1.06149,
+      "z": 14.50414,
+      "radiusX": 0.39694,
+      "radiusZ": 0.86935
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -7.14304,
+      "z": 23.87285,
+      "radiusX": 1.4214,
+      "radiusZ": 0.77938
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 1.96252,
+      "z": 17.42944,
+      "radiusX": 0.52877,
+      "radiusZ": 0.35119
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 52.43546,
+      "z": -17.0844,
+      "radiusX": 0.76514,
+      "radiusZ": 0.67432
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 50.75866,
+      "z": -26.52354,
+      "radiusX": 0.55063,
+      "radiusZ": 0.77701
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 24.71965,
+      "z": -37.27784,
+      "radiusX": 1.0442,
+      "radiusZ": 0.7904
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -53.50832,
+      "z": -16.55393,
+      "radiusX": 0.30603,
+      "radiusZ": 0.88015
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -4.05888,
+      "z": 17.34282,
+      "radiusX": 1.45038,
+      "radiusZ": 0.56829
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -45.08434,
+      "z": -36.03777,
+      "radiusX": 1.50135,
+      "radiusZ": 0.96074
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -10.98239,
+      "z": 7.09086,
+      "radiusX": 1.26241,
+      "radiusZ": 0.60647
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -46.23149,
+      "z": 32.75088,
+      "radiusX": 0.93777,
+      "radiusZ": 0.92312
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 34.68876,
+      "z": -27.8026,
+      "radiusX": 1.05953,
+      "radiusZ": 0.3742
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -49.58642,
+      "z": 11.02049,
+      "radiusX": 1.45881,
+      "radiusZ": 0.59566
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -57.30227,
+      "z": -5.83571,
+      "radiusX": 0.85181,
+      "radiusZ": 0.89364
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -27.14992,
+      "z": 57.34846,
+      "radiusX": 0.3751,
+      "radiusZ": 0.9734
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -13.42756,
+      "z": -23.26046,
+      "radiusX": 0.67793,
+      "radiusZ": 0.48584
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 7.12236,
+      "z": 9.87621,
+      "radiusX": 1.34559,
+      "radiusZ": 0.70261
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -4.44516,
+      "z": 18.58135,
+      "radiusX": 1.06234,
+      "radiusZ": 0.77278
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -10.00915,
+      "z": -30.58883,
+      "radiusX": 1.43606,
+      "radiusZ": 0.70559
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -0.317,
+      "z": -12.06617,
+      "radiusX": 0.30157,
+      "radiusZ": 0.67711
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -31.34356,
+      "z": -11.72291,
+      "radiusX": 0.62719,
+      "radiusZ": 0.62447
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 28.15046,
+      "z": 48.53382,
+      "radiusX": 1.40579,
+      "radiusZ": 0.69549
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 51.11264,
+      "z": 38.3017,
+      "radiusX": 0.88683,
+      "radiusZ": 0.33713
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -61.72214,
+      "z": 12.72709,
+      "radiusX": 0.52531,
+      "radiusZ": 0.44536
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 12.15724,
+      "z": 17.39086,
+      "radiusX": 1.55766,
+      "radiusZ": 0.92525
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 6.86351,
+      "z": -52.09892,
+      "radiusX": 1.05,
+      "radiusZ": 0.40496
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -42.81916,
+      "z": 16.66325,
+      "radiusX": 1.17769,
+      "radiusZ": 0.69051
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 23.88802,
+      "z": -25.67092,
+      "radiusX": 1.34972,
+      "radiusZ": 0.46279
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 6.83524,
+      "z": 14.0313,
+      "radiusX": 1.08968,
+      "radiusZ": 0.43016
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -10.09912,
+      "z": -13.10988,
+      "radiusX": 1.05158,
+      "radiusZ": 0.81903
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -26.89876,
+      "z": 20.88608,
+      "radiusX": 1.43788,
+      "radiusZ": 0.31068
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -32.21653,
+      "z": -29.58439,
+      "radiusX": 1.27523,
+      "radiusZ": 0.87456
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 28.11673,
+      "z": -55.93763,
+      "radiusX": 1.05587,
+      "radiusZ": 0.67381
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 2.58032,
+      "z": -48.86371,
+      "radiusX": 0.43199,
+      "radiusZ": 0.79208
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -12.77105,
+      "z": 6.29075,
+      "radiusX": 0.33893,
+      "radiusZ": 0.95742
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 62.30649,
+      "z": -14.4601,
+      "radiusX": 1.14765,
+      "radiusZ": 0.74882
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 3.14827,
+      "z": -15.44797,
+      "radiusX": 0.83656,
+      "radiusZ": 0.32909
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -17.64444,
+      "z": 39.92696,
+      "radiusX": 1.46073,
+      "radiusZ": 0.41759
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -31.67027,
+      "z": 44.13479,
+      "radiusX": 0.82618,
+      "radiusZ": 0.31028
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -61.36115,
+      "z": -19.26647,
+      "radiusX": 1.04982,
+      "radiusZ": 0.66361
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -17.73599,
+      "z": 53.82955,
+      "radiusX": 1.00915,
+      "radiusZ": 0.44155
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -33.82604,
+      "z": 11.0685,
+      "radiusX": 0.60325,
+      "radiusZ": 0.66053
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 33.39262,
+      "z": -8.41197,
+      "radiusX": 1.48181,
+      "radiusZ": 0.54455
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 39.8735,
+      "z": 18.68815,
+      "radiusX": 1.50924,
+      "radiusZ": 0.7488
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -29.72202,
+      "z": 17.5514,
+      "radiusX": 1.28999,
+      "radiusZ": 0.53427
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -26.22456,
+      "z": 12.43334,
+      "radiusX": 0.4097,
+      "radiusZ": 0.91204
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 3.87826,
+      "z": 11.42506,
+      "radiusX": 0.52981,
+      "radiusZ": 0.90985
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -39.46441,
+      "z": 9.14686,
+      "radiusX": 0.39876,
+      "radiusZ": 0.4088
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -1.25772,
+      "z": 44.13831,
+      "radiusX": 0.7407,
+      "radiusZ": 0.61287
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -25.75715,
+      "z": 20.69115,
+      "radiusX": 1.10749,
+      "radiusZ": 0.52772
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 11.10808,
+      "z": -42.24667,
+      "radiusX": 1.41537,
+      "radiusZ": 0.3464
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 24.95739,
+      "z": 15.56536,
+      "radiusX": 0.51856,
+      "radiusZ": 0.79005
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -27.67164,
+      "z": -56.58212,
+      "radiusX": 1.45953,
+      "radiusZ": 0.32329
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 5.27377,
+      "z": 22.68458,
+      "radiusX": 1.15204,
+      "radiusZ": 0.83002
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -7.95323,
+      "z": 47.45395,
+      "radiusX": 0.35003,
+      "radiusZ": 0.48583
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 6.70265,
+      "z": -12.55511,
+      "radiusX": 1.22585,
+      "radiusZ": 0.94015
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 7.13836,
+      "z": 29.46349,
+      "radiusX": 0.86116,
+      "radiusZ": 0.42448
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 5.47825,
+      "z": -54.80985,
+      "radiusX": 1.41628,
+      "radiusZ": 0.59556
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -13.68136,
+      "z": 28.86281,
+      "radiusX": 1.48601,
+      "radiusZ": 0.41958
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -38.82473,
+      "z": -14.01913,
+      "radiusX": 0.40446,
+      "radiusZ": 0.43894
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -25.30035,
+      "z": 29.82697,
+      "radiusX": 1.4765,
+      "radiusZ": 0.32142
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 36.53565,
+      "z": 39.46453,
+      "radiusX": 0.45651,
+      "radiusZ": 0.74515
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 8.41071,
+      "z": 25.179,
+      "radiusX": 1.04215,
+      "radiusZ": 0.32587
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 43.71173,
+      "z": 15.59395,
+      "radiusX": 1.16247,
+      "radiusZ": 0.97764
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -35.09584,
+      "z": 53.13462,
+      "radiusX": 0.61392,
+      "radiusZ": 0.54364
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 19.54379,
+      "z": 27.59377,
+      "radiusX": 0.46782,
+      "radiusZ": 0.51076
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -36.78509,
+      "z": -33.47997,
+      "radiusX": 1.11495,
+      "radiusZ": 0.72703
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -7.30357,
+      "z": 33.33386,
+      "radiusX": 0.48504,
+      "radiusZ": 0.94719
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 5.26917,
+      "z": 25.04728,
+      "radiusX": 1.43092,
+      "radiusZ": 0.30948
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 7.82226,
+      "z": 17.29427,
+      "radiusX": 1.50205,
+      "radiusZ": 0.88223
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 6.48292,
+      "z": 12.83526,
+      "radiusX": 0.33531,
+      "radiusZ": 0.97343
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -2.29736,
+      "z": -32.01976,
+      "radiusX": 1.20921,
+      "radiusZ": 0.84655
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 27.10128,
+      "z": 36.67707,
+      "radiusX": 0.74093,
+      "radiusZ": 0.34219
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -23.57798,
+      "z": 47.68784,
+      "radiusX": 0.42192,
+      "radiusZ": 0.69208
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": 7.06492,
+      "z": 13.95749,
+      "radiusX": 0.5913,
+      "radiusZ": 0.99305
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -15.34152,
+      "z": -1.07582,
+      "radiusX": 0.43168,
+      "radiusZ": 0.91656
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -21.45204,
+      "z": 11.69103,
+      "radiusX": 0.74223,
+      "radiusZ": 0.75734
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -64.44361,
+      "z": 4.46018,
+      "radiusX": 0.83177,
+      "radiusZ": 0.63802
+    },
+    {
+      "kind": "ellipse",
+      "name": "Boulder",
+      "x": -59.52788,
+      "z": -6.37634,
+      "radiusX": 0.68002,
+      "radiusZ": 0.4156
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 46.68142,
+      "z": -0.0,
+      "radiusX": 0.43143,
+      "radiusZ": 0.43143
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -43.2522,
+      "z": -39.62282,
+      "radiusX": 0.35439,
+      "radiusZ": 0.35439
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 4.96936,
+      "z": 56.62752,
+      "radiusX": 0.40782,
+      "radiusZ": 0.40782
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 35.26291,
+      "z": -45.9933,
+      "radiusX": 0.28385,
+      "radiusZ": 0.28385
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -53.4983,
+      "z": 9.46238,
+      "radiusX": 0.44125,
+      "radiusZ": 0.44125
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 27.56842,
+      "z": 17.5374,
+      "radiusX": 0.33838,
+      "radiusZ": 0.33838
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -11.70783,
+      "z": -43.55591,
+      "radiusX": 0.36244,
+      "radiusZ": 0.36244
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -14.41073,
+      "z": 27.74546,
+      "radiusX": 0.34226,
+      "radiusZ": 0.34226
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 20.91732,
+      "z": -7.63836,
+      "radiusX": 0.33626,
+      "radiusZ": 0.33626
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -55.60936,
+      "z": -22.95663,
+      "radiusX": 0.47741,
+      "radiusZ": 0.47741
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 22.26021,
+      "z": 47.57277,
+      "radiusX": 0.49344,
+      "radiusZ": 0.49344
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 15.85065,
+      "z": -50.52809,
+      "radiusX": 0.29974,
+      "radiusZ": 0.29974
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -49.90186,
+      "z": 28.91657,
+      "radiusX": 0.27342,
+      "radiusZ": 0.27342
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 52.73311,
+      "z": 11.59555,
+      "radiusX": 0.38254,
+      "radiusZ": 0.38254
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -26.84166,
+      "z": -38.18317,
+      "radiusX": 0.36779,
+      "radiusZ": 0.36779
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -5.17246,
+      "z": 39.90032,
+      "radiusX": 0.4501,
+      "radiusZ": 0.4501
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -41.8686,
+      "z": -1.7337,
+      "radiusX": 0.45369,
+      "radiusZ": 0.45369
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 15.89338,
+      "z": 15.81787,
+      "radiusX": 0.39217,
+      "radiusZ": 0.39217
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -2.93309,
+      "z": -63.51534,
+      "radiusX": 0.48526,
+      "radiusZ": 0.48526
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -32.46674,
+      "z": 38.9009,
+      "radiusX": 0.3059,
+      "radiusZ": 0.3059
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 36.07927,
+      "z": -4.85192,
+      "radiusX": 0.46869,
+      "radiusZ": 0.46869
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -43.89906,
+      "z": -30.54846,
+      "radiusX": 0.38145,
+      "radiusZ": 0.38145
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 12.17806,
+      "z": 54.15146,
+      "radiusX": 0.48908,
+      "radiusZ": 0.48908
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 22.14286,
+      "z": -38.6353,
+      "radiusX": 0.35,
+      "radiusZ": 0.35
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 41.30966,
+      "z": 19.09032,
+      "radiusX": 0.35951,
+      "radiusZ": 0.35951
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -14.11082,
+      "z": -33.72535,
+      "radiusX": 0.3507,
+      "radiusZ": 0.3507
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -8.83788,
+      "z": 24.56459,
+      "radiusX": 0.44893,
+      "radiusZ": 0.44893
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 46.06117,
+      "z": -24.20296,
+      "radiusX": 0.46315,
+      "radiusZ": 0.46315
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -54.26524,
+      "z": -14.30977,
+      "radiusX": 0.31767,
+      "radiusZ": 0.31767
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 30.58668,
+      "z": 47.57979,
+      "radiusX": 0.40876,
+      "radiusZ": 0.40876
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 7.34751,
+      "z": -42.7266,
+      "radiusX": 0.41127,
+      "radiusZ": 0.41127
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -29.52864,
+      "z": 22.8636,
+      "radiusX": 0.44332,
+      "radiusZ": 0.44332
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 27.46126,
+      "z": 2.27815,
+      "radiusX": 0.42436,
+      "radiusZ": 0.42436
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -26.84589,
+      "z": -29.02621,
+      "radiusX": 0.47362,
+      "radiusZ": 0.47362
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 0.31583,
+      "z": 66.32279,
+      "radiusX": 0.35903,
+      "radiusZ": 0.35903
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 28.05224,
+      "z": -30.91607,
+      "radiusX": 0.31848,
+      "radiusZ": 0.31848
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -63.33637,
+      "z": 5.86216,
+      "radiusX": 0.40318,
+      "radiusZ": 0.40318
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 30.04631,
+      "z": 22.81005,
+      "radiusX": 0.38336,
+      "radiusZ": 0.38336
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -9.82278,
+      "z": -54.03431,
+      "radiusX": 0.45861,
+      "radiusZ": 0.45861
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -14.02391,
+      "z": 22.27885,
+      "radiusX": 0.49338,
+      "radiusZ": 0.49338
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 29.47643,
+      "z": -8.07397,
+      "radiusX": 0.43204,
+      "radiusZ": 0.43204
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -25.15522,
+      "z": -12.91366,
+      "radiusX": 0.33594,
+      "radiusZ": 0.33594
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 22.59571,
+      "z": 60.97464,
+      "radiusX": 0.38397,
+      "radiusZ": 0.38397
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 18.30752,
+      "z": -44.95325,
+      "radiusX": 0.31752,
+      "radiusZ": 0.31752
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 27.06579,
+      "z": 8.34917,
+      "radiusX": 0.40157,
+      "radiusZ": 0.40157
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -17.2617,
+      "z": -29.46451,
+      "radiusX": 0.32429,
+      "radiusZ": 0.32429
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -5.91209,
+      "z": 27.51038,
+      "radiusX": 0.4205,
+      "radiusZ": 0.4205
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -42.85934,
+      "z": -5.34865,
+      "radiusX": 0.45062,
+      "radiusZ": 0.45062
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 24.30562,
+      "z": 28.56495,
+      "radiusX": 0.37542,
+      "radiusZ": 0.37542
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 2.1752,
+      "z": -59.36881,
+      "radiusX": 0.44034,
+      "radiusZ": 0.44034
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -23.85329,
+      "z": 24.19652,
+      "radiusX": 0.40926,
+      "radiusZ": 0.40926
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 36.42308,
+      "z": -1.85585,
+      "radiusX": 0.40615,
+      "radiusZ": 0.40615
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -26.49114,
+      "z": -21.89636,
+      "radiusX": 0.45028,
+      "radiusZ": 0.45028
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 6.14792,
+      "z": 44.1246,
+      "radiusX": 0.41207,
+      "radiusZ": 0.41207
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 26.1149,
+      "z": 14.80235,
+      "radiusX": 0.44439,
+      "radiusZ": 0.44439
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -8.24648,
+      "z": -25.43697,
+      "radiusX": 0.33495,
+      "radiusZ": 0.33495
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -16.16234,
+      "z": 35.41569,
+      "radiusX": 0.33318,
+      "radiusZ": 0.33318
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 36.04635,
+      "z": -15.28405,
+      "radiusX": 0.44262,
+      "radiusZ": 0.44262
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -34.07717,
+      "z": -12.07736,
+      "radiusX": 0.47862,
+      "radiusZ": 0.47862
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 27.83181,
+      "z": 52.36025,
+      "radiusX": 0.40302,
+      "radiusZ": 0.40302
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 10.91775,
+      "z": -42.21644,
+      "radiusX": 0.32075,
+      "radiusZ": 0.32075
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 40.27805,
+      "z": 6.72913,
+      "radiusX": 0.4478,
+      "radiusZ": 0.4478
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -27.5677,
+      "z": -35.25593,
+      "radiusX": 0.31444,
+      "radiusZ": 0.31444
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -2.68251,
+      "z": 34.31835,
+      "radiusX": 0.40919,
+      "radiusZ": 0.40919
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 41.95214,
+      "z": -39.1732,
+      "radiusX": 0.47767,
+      "radiusZ": 0.47767
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -32.18764,
+      "z": 0.30657,
+      "radiusX": 0.33899,
+      "radiusZ": 0.33899
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 29.63788,
+      "z": 26.63622,
+      "radiusX": 0.40961,
+      "radiusZ": 0.40961
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -4.95219,
+      "z": -50.8642,
+      "radiusX": 0.39369,
+      "radiusZ": 0.39369
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -20.81864,
+      "z": 27.69602,
+      "radiusX": 0.37127,
+      "radiusZ": 0.37127
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": 26.2673,
+      "z": -4.90441,
+      "radiusX": 0.38612,
+      "radiusZ": 0.38612
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -33.13511,
+      "z": -20.63797,
+      "radiusX": 0.34883,
+      "radiusZ": 0.34883
+    },
+    {
+      "kind": "ellipse",
+      "name": "Tree_trunk",
+      "x": -11,
+      "z": -12,
+      "radiusX": 0.574,
+      "radiusZ": 0.574
+    }
+  ]
+}

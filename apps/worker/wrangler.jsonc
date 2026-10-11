@@ -1,0 +1,104 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "sandtray",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-06",
+  "workers_dev": false,
+  "triggers": {
+      "crons": [
+      "0 * * * *"
+    ]
+  },
+  "assets": {
+    "directory": "../web/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // 2026-10-09 使用者裁定：素材登入才能下載，所有請求先經 Worker（apps/worker/src/static-gate.ts）。
+    "run_worker_first": true
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "ROOM_DO",
+        "class_name": "RoomDurableObject"
+      },
+      {
+        "name": "SCENE_COORDINATOR_DO",
+        "class_name": "SceneCoordinatorDurableObject"
+      },
+      {
+        "name": "AUTH_DO",
+        "class_name": "AuthDurableObject"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "RoomDurableObject",
+        "SceneCoordinatorDurableObject"
+      ]
+    },
+    {
+      "tag": "v2",
+      "new_sqlite_classes": [
+        "AuthDurableObject"
+      ]
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PRIVATE_ASSETS",
+      "bucket_name": "sandtray-private-assets"
+    }
+  ],
+  "env": {
+    // Template for a deployed environment. Copy it (e.g. to "staging") and replace every REPLACE_ME value with your own
+    // resources from `wrangler d1 create` / `wrangler r2 bucket create`. durable_objects, d1_databases, r2_buckets and vars
+    // are not inherited by named environments, so they are declared again here.
+    // Secrets (OIDC_CLIENT_SECRET etc.) are set with `wrangler secret put --env production` and never live in this file.
+    // RETENTION_POLICY / TOMBSTONE_TTL_MS are intentionally absent: deployed environments use the fixed 8 h tombstone TTL; policy.ts rejects env overrides.
+    "production": {
+      "name": "sandtray-production",
+      "workers_dev": false,
+      "secrets": {
+        "required": [
+          "OIDC_ISSUER",
+          "OIDC_CLIENT_ID",
+          "OIDC_CLIENT_SECRET",
+          "OIDC_AUTHORIZATION_URL",
+          "OIDC_TOKEN_URL",
+          "OIDC_JWKS_URL"
+        ]
+      },
+      "triggers": { "crons": ["0 * * * *"] },
+      "routes": [
+        { "pattern": "sandtray.example.org", "custom_domain": true }
+      ],
+      "vars": {
+        "DEPLOY_ENV": "production",
+        "APP_ORIGIN": "https://sandtray.example.org"
+      },
+      "durable_objects": {
+        "bindings": [
+          { "name": "ROOM_DO", "class_name": "RoomDurableObject" },
+          { "name": "SCENE_COORDINATOR_DO", "class_name": "SceneCoordinatorDurableObject" },
+          { "name": "AUTH_DO", "class_name": "AuthDurableObject" }
+        ]
+      },
+      "d1_databases": [
+        {
+          "binding": "DIRECTORY",
+          "database_name": "sandtray-production-directory",
+          "database_id": "REPLACE_ME",
+          "migrations_dir": "migrations"
+        }
+      ],
+      "r2_buckets": [
+        { "binding": "PRIVATE_ASSETS", "bucket_name": "sandtray-production-private-assets" },
+        { "binding": "PRIVATE_SCENES", "bucket_name": "sandtray-production-private-scenes" }
+      ]
+    }
+  }
+}

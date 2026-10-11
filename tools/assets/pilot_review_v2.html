@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>沙盤素材｜人物風格與動物修正版</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f2ec;color:#2b3833;font:16px/1.6 system-ui,sans-serif}main{max-width:1250px;margin:auto;padding:32px}h1{font-size:30px;margin:8px 0}p{max-width:850px}header small{color:#54745e;letter-spacing:.1em}button,select,a.link{font:inherit;border:1px solid #b8c6bb;border-radius:8px;background:white;color:#254a38;padding:7px 13px;cursor:pointer}button:hover{background:#e4eee4}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #c48347}#grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:20px;margin-top:24px}.card{border:1px solid #d5dcd2;border-radius:14px;overflow:hidden;background:#fff}.card>img{width:100%;aspect-ratio:1;object-fit:contain}.info{padding:15px}.info h2{font-size:19px;margin:0}.info small{display:block;color:#657268;margin:4px 0 12px}.status{background:#e7eee5;border-radius:8px;padding:12px}dialog{border:0;border-radius:14px;padding:20px;width:min(1050px,96vw);max-height:96vh}dialog::backdrop{background:#172820bd}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.toolbar h2{margin:0 auto 0 0}#stage{height:48vh;min-height:300px;background:#eeeee7;border-radius:10px;margin:12px 0;touch-action:none}canvas{width:100%;height:100%;display:block}.compare{display:flex;gap:12px;overflow:auto;margin-top:12px}.compare img{height:125px;border-radius:6px}#message{min-height:25px;font-size:14px}label{display:flex;gap:8px;align-items:center}footer{margin-top:30px;color:#657268}a{color:#285f44}#animation{min-width:110px}
+[hidden]{display:none!important}.compare figure{margin:0;text-align:center}.compare figcaption{font-size:13px;color:#657268}</style>
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+<main><header><small>SANDTRAY / STYLE REVIEW</small><h1>人物風格與動物修正版</h1>
+<p>新增較擬真與卡通兩組人物，並修整貓咪臉部。共 12 件可旋轉檢視的模型，可切換簡化版本或試播動畫。</p>
+<p class="status">目前為待驗收候選素材，尚未正式發布。請比較人物的自然輪廓、關節外觀與貓咪臉部；預覽中附有參考圖及修改前後對照。</p></header>
+<label>素材風格<select id="style"><option value="all">全部</option><option value="realistic">較擬真人物</option><option value="cartoon">卡通人物</option><option value="animal">動物</option><option value="other">其他</option></select><span id="count" role="status"></span></label><section id="grid" aria-label="素材清單"></section><footer>動畫預設停止。關閉預覽即停止動畫。<a href="/v2-assets/validation.json">載入檢查報告</a> · <a href="/assets/reference-audit.json">參考圖核對報告</a></footer></main>
+<dialog id="viewer"><div class="toolbar"><h2 id="title"></h2><button id="close">關閉</button></div>
+<div id="stage"></div><div class="toolbar"><label>版本<select id="lod"><option value="model">完整</option><option value="lod">簡化</option></select></label>
+<label>動畫<select id="animation"><option value="">停止</option></select></label>
+<label>可變色區域<input type="color" id="color" value="#8baf91"></label><button id="reset">重設外觀</button>
+<a id="download" class="link" download>下載 GLB</a></div>
+<div id="message" role="status"></div><div class="compare" id="compare"></div></dialog>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const ids=['007','008','019','020','021','036','046','048','056','064','084','092'].map(n=>'ST-'+n);
+const $=id=>document.getElementById(id);
+const revised=new Set(['ST-007','ST-008','ST-019','ST-020','ST-021']);
+const source=id=>revised.has(id)?'/v2-assets/':'/assets/';
+const family=id=>['ST-007','ST-008'].includes(id)?'realistic':['ST-019','ST-020'].includes(id)?'cartoon':['ST-021','ST-092'].includes(id)?'animal':'other';
+function addDetailReview(id){
+  const views=id==='ST-021'?[['face-front','臉部正面'],['face-left','臉部左側'],['face-right','臉部右側'],['face-lod-front','簡化版臉部'],['face-lod-left','簡化版左側'],['face-lod-right','簡化版右側']]:['ST-007','ST-008','ST-019','ST-020'].includes(id)?[['pose-idle','待機姿勢'],['pose-walk','行走姿勢'],['pose-wave','揮手姿勢']]:[];
+  for(const [name,label]of views){const figure=document.createElement('figure'),img=new Image(),caption=document.createElement('figcaption');img.src=source(id)+id+'/'+name+'.png';img.alt=label;caption.textContent=label;figure.append(img,caption);$('compare').append(figure)}
+}
+function filter(){let count=0;for(const card of document.querySelectorAll('.card')){card.hidden=$('style').value!=='all'&&card.dataset.family!==$('style').value;if(!card.hidden)count++} $('count').textContent=count+' 件';}
+$('style').onchange=filter;
+let renderer,scene,camera,controls,mixer,model,animationId,observer,current,serial=0;
+let originalColors=new Map();
+function disposeModel(root){
+  const geometries=new Set(),materials=new Set(),textures=new Set(),skeletons=new Set();
+  root?.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.skeleton)skeletons.add(o.skeleton);if(o.material)for(const m of [].concat(o.material))materials.add(m)});
+  for(const m of materials)for(const value of Object.values(m))if(value?.isTexture)textures.add(value);
+  for(const t of textures){t.source?.data?.close?.();t.dispose()}
+  for(const s of skeletons)s.dispose();
+  for(const g of geometries)g.dispose();for(const m of materials)m.dispose();
+}
+function cleanup(){
+  serial++;cancelAnimationFrame(animationId);observer?.disconnect();controls?.dispose();mixer?.stopAllAction();
+  if(model)mixer?.uncacheRoot(model);disposeModel(model);
+  $('animation').onchange=$('color').oninput=$('reset').onclick=null;
+  $('animation').disabled=$('color').disabled=$('reset').disabled=true;
+  $('download').removeAttribute('href');
+  renderer?.dispose();renderer?.forceContextLoss();$('stage').replaceChildren();
+  renderer=scene=camera=controls=mixer=model=null;originalColors.clear();
+}
+async function load(){
+  cleanup();const request=serial,asset=current;
+  $('message').textContent='載入模型中…';$('animation').replaceChildren(new Option('停止',''));
+  try{
+    const gltf=await new GLTFLoader().loadAsync(source(asset.assetId)+asset.assetId+'/'+$('lod').value+'.glb');
+    if(request!==serial){disposeModel(gltf.scene);return}
+    model=gltf.scene;scene=new THREE.Scene();scene.background=new THREE.Color('#eeeee7');
+    scene.add(model,new THREE.HemisphereLight(0xffffff,0x74715f,2.5));
+    const light=new THREE.DirectionalLight(0xffffff,3);light.position.set(3,5,4);scene.add(light);
+    const box=new THREE.Box3().setFromObject(model),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3()),span=Math.max(...size.toArray());
+    camera=new THREE.PerspectiveCamera(35,1,.01,100);camera.position.copy(center).add(new THREE.Vector3(1.5,.9,2.4).multiplyScalar(span));
+    renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));$('stage').append(renderer.domElement);
+    controls=new OrbitControls(camera,renderer.domElement);controls.target.copy(center);controls.update();
+    observer=new ResizeObserver(()=>{if(request!==serial||!renderer)return;const {width,height}=$('stage').getBoundingClientRect();if(!width||!height)return;renderer.setSize(width,height);camera.aspect=width/height;camera.updateProjectionMatrix()});observer.observe($('stage'));
+    mixer=new THREE.AnimationMixer(model);
+    for(const clip of gltf.animations)$('animation').add(new Option(clip.name,clip.name));
+    $('animation').disabled=!gltf.animations.length;$('reset').disabled=false;
+    $('animation').onchange=()=>{mixer.stopAllAction();const clip=THREE.AnimationClip.findByName(gltf.animations,$('animation').value);if(clip)mixer.clipAction(clip).play()};
+    model.traverse(o=>{if(o.isMesh)for(const m of [].concat(o.material))if(asset.editableMaterials.includes(m.name))originalColors.set(m,m.color.clone())});
+    $('color').disabled=!originalColors.size;
+    if(originalColors.size)$('color').value='#'+originalColors.values().next().value.getHexString();
+    $('color').oninput=()=>{for(const m of originalColors.keys())m.color.set($('color').value)};
+    $('reset').onclick=()=>{for(const [m,c]of originalColors)m.color.copy(c);if(originalColors.size)$('color').value='#'+originalColors.values().next().value.getHexString();mixer.stopAllAction();$('animation').value=''};
+    $('download').href=source(asset.assetId)+asset.assetId+'/'+$('lod').value+'.glb';
+    let last=performance.now();const tick=now=>{const delta=Math.min((now-last)/1000,.1);last=now;mixer.update(delta);controls.update();renderer.render(scene,camera);animationId=requestAnimationFrame(tick)};animationId=requestAnimationFrame(tick);
+    $('message').textContent='已載入 · 拖曳旋轉，滾輪或雙指縮放 · 動畫已停止';
+  }catch(error){if(request!==serial)return;cleanup();$('message').textContent='無法載入：'+error.message;}
+}
+for(const id of ids){
+  try{
+    const response=await fetch(source(id)+id+'/metadata.json');if(!response.ok)throw Error('missing');
+    const asset=await response.json(),card=document.createElement('article');card.className='card';card.dataset.family=family(id);card.dataset.assetId=id;
+    const img=new Image();img.src=source(id)+id+'/hero.png';img.alt=asset.nameZhTW+'實際模型渲染';
+    const info=document.createElement('div');info.className='info';const title=document.createElement('h2');title.textContent=asset.nameZhTW;
+    const meta=document.createElement('small');meta.textContent=id+' · '+({realistic:'較擬真人物',cartoon:'卡通人物',animal:'動物',other:'其他'}[family(id)])+' · 待驗收';
+    const button=document.createElement('button');button.textContent='檢視立體模型';button.onclick=()=>{current=asset;$('title').textContent=id+' '+asset.nameZhTW;$('lod').value='model';$('compare').replaceChildren();for(const src of ['/references/'+id+'/candidate-1.png',...['front','back','left','right','top','bottom'].map(v=>source(id)+id+'/'+v+'.png')]){const figure=document.createElement('figure'),i=new Image(),caption=document.createElement('figcaption');i.src=src;i.alt=src.includes('references')?'原始參考圖':src.split('/').pop();caption.textContent=src.includes('references')?'參考圖':({'front.png':'正面','back.png':'背面','left.png':'左側','right.png':'右側','top.png':'上方','bottom.png':'底部'}[src.split('/').pop()]??'修正版');figure.append(i,caption);$('compare').append(figure)}if(['ST-007','ST-020','ST-021'].includes(id)){const figure=document.createElement('figure'),old=new Image(),caption=document.createElement('figcaption');old.src='/assets/'+id+'/hero.png';old.alt='修改前模型';caption.textContent='修改前';figure.append(old,caption);$('compare').append(figure)}addDetailReview(id);$('viewer').showModal();load()};
+    info.append(title,meta,button);card.append(img,info);$('grid').append(card);
+  }catch{const p=document.createElement('p');p.textContent=id+' 尚未產出';$('grid').append(p)}
+}
+filter();$('lod').onchange=load;$('close').onclick=()=>$('viewer').close();$('viewer').addEventListener('close',cleanup);
+</script></html>

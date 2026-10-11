@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "assetId": {
+      "type": "string",
+      "pattern": "^ST-(00[1-9]|0[1-9][0-9]|100)$"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "nameZhTW": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "animationClass": {
+      "type": "string",
+      "enum": [
+        "H",
+        "M",
+        "S"
+      ]
+    },
+    "animationBrief": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "batch": {
+      "type": "string",
+      "enum": [
+        "PILOT-10",
+        "BATCH"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "const": "PLANNED"
+    }
+  },
+  "required": [
+    "assetId",
+    "category",
+    "nameZhTW",
+    "animationClass",
+    "animationBrief",
+    "batch",
+    "status"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,1 @@
+ALTER TABLE scene_archive ADD COLUMN room_fence INTEGER NOT NULL DEFAULT 0;

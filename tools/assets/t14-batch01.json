@@ -1,0 +1,65 @@
+{
+  "batch": "t14-batch01",
+  "delivery": "private-draft",
+  "maxBytes": 1000000,
+  "maxTriangles": 10000,
+  "items": [
+    {
+      "seedId": "ST-145",
+      "pack": "car-kit",
+      "member": "Models/GLB format/sedan.glb"
+    },
+    {
+      "seedId": "ST-146",
+      "pack": "car-kit",
+      "member": "Models/GLB format/truck.glb"
+    },
+    {
+      "seedId": "ST-151",
+      "pack": "watercraft-kit",
+      "member": "Models/GLB format/boat-row-small.glb"
+    },
+    {
+      "seedId": "ST-157",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/tree_pineDefaultA.glb",
+      "materialPolicy": "non-metallic-flat-color"
+    },
+    {
+      "seedId": "ST-158",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/plant_bush.glb",
+      "materialPolicy": ["double-sided-thin-surfaces", "non-metallic-flat-color"]
+    },
+    {
+      "seedId": "ST-159",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/flower_redA.glb",
+      "materialPolicy": ["double-sided-thin-surfaces", "non-metallic-flat-color"]
+    },
+    {
+      "seedId": "ST-160",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/grass.glb",
+      "materialPolicy": ["double-sided-thin-surfaces", "non-metallic-flat-color"]
+    },
+    {
+      "seedId": "ST-167",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/log.glb",
+      "materialPolicy": "non-metallic-flat-color"
+    },
+    {
+      "seedId": "ST-168",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/stump_round.glb",
+      "materialPolicy": "non-metallic-flat-color"
+    },
+    {
+      "seedId": "ST-183",
+      "pack": "nature-kit",
+      "member": "Models/GLTF format/fence_planks.glb",
+      "materialPolicy": "non-metallic-flat-color"
+    }
+  ]
+}
